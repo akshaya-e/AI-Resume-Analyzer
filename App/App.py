@@ -14,7 +14,7 @@ import plotly.express as px # to create visualisations at the admin session
 import plotly.graph_objects as go
 from geopy.geocoders import Nominatim
 # libraries used to parse the pdf files
-from pyresparser import ResumeParser
+from pyresparser import ResumeParser 
 from pdfminer3.layout import LAParams, LTTextBox
 from pdfminer3.pdfpage import PDFPage
 from pdfminer3.pdfinterp import PDFResourceManager
