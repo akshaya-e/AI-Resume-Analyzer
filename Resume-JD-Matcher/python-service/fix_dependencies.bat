@@ -1,0 +1,13 @@
+@echo off
+echo Cleaning up dependencies...
+pip uninstall -y pydantic spacy thinc confection
+echo.
+echo Installing fresh compatible versions...
+pip install "pydantic>=2.8.0" "spacy>=3.7.5"
+echo.
+echo Verifying installation...
+pip show pydantic
+pip show spacy
+echo.
+echo Now attempting to run the app...
+python app.py

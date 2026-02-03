@@ -1,302 +1,343 @@
-<p><small>Best View in <a href="https://github.com/settings/appearance">Light Mode</a> and Desktop Site (Recommended)</small></p><br/>
-
-![AI-Resume-Analyzer](https://socialify.git.ci/deepakpadhi986/AI-Resume-Analyzer/image?description=1&descriptionEditable=5th%20Sem%20Final%20Year%20Project%20at%20Kirti%20M%20Doongursee%20College%20(2022%20-%2023)&font=Raleway&language=1&pattern=Plus&theme=Light)
-
 <div align="center">
-  <h1>🌴 AI RESUME ANALYZER 🌴</h1>
-  <p>A Tool for Resume Analysis, Predictions and Recommendations</p>
-  <!-- Badges -->
-  <p>
-    <img src="https://img.shields.io/github/last-commit/deepakpadhi986/AI-Resume-Analyzer" alt="last update" />
-    <img src="https://badges.frapsoft.com/os/v2/open-source.svg?v=103" alt="open source" />
-    <img src="https://img.shields.io/github/languages/top/deepakpadhi986/AI-Resume-Analyzer?color=red" alt="language" />
-    <img src="https://img.shields.io/github/languages/code-size/deepakpadhi986/AI-Resume-Analyzer?color=informational" alt="code size" />
-    <a href="https://github.com/deepakpadhi986/AI-Resume-Analyzer/blob/main/LICENSE">
-      <img src="https://img.shields.io/github/license/deepakpadhi986/AI-Resume-Analyzer.svg?color=yellow" alt="license" />
-    </a>
-  </p>
-  
-  <!--links-->
-  <h4>
-    <a href="#preview-">View Demo</a>
-    <span> · </span>
-    <a href="#setup--installation-">Installation</a>
-    <span> · </span>
-    <a href="mailto:dnoobnerd@gmail.com?subject=I%20Want%20The%20Project%20Report%20of%20AI-RESUME-ANALYZER%20(2022%20 %2023)&body=Here%20Are%20My%20Details%20%F0%9F%98%89%0D%0A%0D%0AOrganization%2FCollege%20Name%3A%20%0D%0A%0D%0AFull%20Name%3A%20%0D%0A%0D%0AGitHub%20Profile%20%3A%20%0D%0A%0D%0AFrom%20where%20did%20you%20get%20to%20know%20about%20this%20project%3A%0D%0A%0D%0APurpose%20of%20asking%20project%20report%20(describe)%3A%0D%0A%0D%0A%0D%0AIf%20the%20above%20information%20satisfy%20your%20identity%20you%20will%20get%20the%20report%20to%20your%20email.">Project Report</a>
-  </h4>
-  <p>
-    <small align="justify">
-      Built with 🤍 by 
-      <a href="https://dnoobnerd.netlify.app/">Deepak Padhi</a> through 
-      <a href="https://www.linkedin.com/in/mrbriit/">Dr Bright --(Data Scientist)</a>
-     </small>
-  </p>
-  <small align="justify">🚀 A Project Submitted for the partial fulfilment of the degree B.sc CS at 
-    <a href="https://kirticollege.edu.in/">Kirti College</a> during academic year 2022-23
-  </small>
-</div><br/><br/>
 
-## About the Project 🥱
-<div align="center">
-    <br/><img src="https://raw.githubusercontent.com/deepakpadhi986/AI-Resume-Analyzer/main/screenshots/RESUME.png" alt="screenshot" /><br/><br/>
-    <p align="justify"> 
-      A tool which parses information from a resume using natural language processing and finds the keywords, cluster them onto sectors based on their keywords. 
-      And lastly show recommendations, predictions, analytics to the applicant / recruiter based on keyword matching.
-    </p>
+# AI Resume Analyzer
+
+### Enterprise-Grade Resume Analysis & Job Matching Platform
+
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Python](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
+[![Node.js](https://img.shields.io/badge/node.js-16+-green.svg)](https://nodejs.org/)
+[![React](https://img.shields.io/badge/react-18+-61dafb.svg)](https://reactjs.org/)
+
+An intelligent, AI-powered platform that analyzes resumes, matches them against job descriptions, and provides actionable insights to improve candidate profiles through advanced Natural Language Processing and Machine Learning.
+
+[Features](#features) • [Architecture](#architecture) • [Quick Start](#quick-start) • [Documentation](#documentation) • [License](#license)
+
 </div>
 
-## Scope 😲
-i. It can be used for getting all the resume data into a structured tabular format and csv as well, so that the organization can use those data for analytics purposes
+---
 
-ii. By providing recommendations, predictions and overall score user can improve their resume and can keep on testing it on our tool
+## Overview
 
-iii. And it can increase more traffic to our tool because of user section
+The AI Resume Analyzer is a comprehensive, production-ready system designed to streamline the recruitment process through intelligent automation. Built on a modern microservice architecture, it combines the power of Python's NLP capabilities with a robust Node.js backend and an intuitive React frontend.
 
-iv. It can be used by colleges to get insight of students and their resume before placements
+### Key Capabilities
 
-v. Also, to get analytics for roles which users are mostly looking for
+- **Intelligent Resume Parsing**: Leverages advanced NLP algorithms (pyresparser, NLTK, spaCy) to extract structured information from unstructured resume documents
+- **Job Description Matching**: Performs semantic analysis to calculate compatibility scores between candidate profiles and job requirements
+- **Gap Analysis**: Identifies skill deficiencies and provides targeted recommendations for professional development
+- **Resume Enhancement**: Offers AI-driven suggestions to improve resume quality, including stronger action verbs, quantifiable metrics, and professional formatting
+- **Overclaim Detection**: Analyzes resumes for unsupported skill claims to ensure authenticity
+- **Career Field Prediction**: Classifies candidates into appropriate career domains (Data Science, Web Development, Mobile Development, UI/UX)
+- **Comprehensive Scoring**: Implements a 100-point scoring system based on industry best practices
 
-vi. To improve this tool by getting feedbacks
+---
 
-<!-- TechStack -->
-## Tech Stack 🍻
-<details>
-  <summary>Frontend</summary>
-  <ul>
-    <li><a href="https://streamlit.io/">Streamlit</a></li>
-    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML">HTML</a></li>
-    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a></li>
-    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript">JavaScript</a></li>
-  </ul>
-</details>
+## Architecture
 
-<details>
-  <summary>Backend</summary>
-  <ul>
-    <li><a href="https://streamlit.io/">Streamlit</a></li>
-    <li><a href="https://www.python.org/">Python</a></li>
-  </ul>
-</details>
-
-<details>
-<summary>Database</summary>
-  <ul>
-    <li><a href="https://www.mysql.com/">MySQL</a></li>
-  </ul>
-</details>
-
-<details>
-<summary>Modules</summary>
-  <ul>
-    <li><a href="https://pandas.pydata.org/">pandas</a></li>
-    <li><a href="https://github.com/OmkarPathak/pyresparser">pyresparser</a></li>
-    <li><a href="https://pypi.org/project/pdfminer3/">pdfminer3</a></li>
-    <li><a href="https://plotly.com/">Plotly</a></li>
-    <li><a href="https://www.nltk.org/">NLTK</a></li>
-  </ul>
-</details>
-
-<!-- Features -->
-## Features 🤦‍♂️
-### Client: -
-- Fetching Location and Miscellaneous Data
-
-  Using Parsing Techniques to fetch
-- Basic Info
-- Skills
-- Keywords
-
-Using logical programs, it will recommend
-- Skills that can be added
-- Predicted job role
-- Course and certificates
-- Resume tips and ideas
-- Overall Score
-- Interview & Resume tip videos
-
-### Admin: -
-- Get all applicant’s data into tabular format
-- Download user’s data into csv file
-- View all saved uploaded pdf in Uploaded Resume folder
-- Get user feedback and ratings
-  
-  Pie Charts for: -
-- Ratings
-- Predicted field / roles
-- Experience level
-- Resume score
-- User count
-- City
-- State
-- Country
-
-### Feedback: -
-- Form filling
-- Rating from 1 – 5
-- Show overall ratings pie chart
-- Past user comments history 
-
-## Requirements 😅
-### Have these things installed to make your process smooth 
-1) Python (3.9.12) https://www.python.org/downloads/release/python-3912/
-2) MySQL https://www.mysql.com/downloads/
-3) Visual Studio Code **(Prefered Code Editor)** https://code.visualstudio.com/Download
-4) Visual Studio build tools for C++ https://aka.ms/vs/17/release/vs_BuildTools.exe
-
-## Setup & Installation 👀
-
-To run this project, perform the following tasks 😨
-
-Download the code file manually or via git
-```bash
-git clone https://github.com/deepakpadhi986/AI-Resume-Analyzer.git
-```
-
-Create a virtual environment and activate it **(recommended)**
-
-Open your command prompt and change your project directory to ```AI-Resume-Analyzer``` and run the following command 
-```bash
-python -m venv venvapp
-
-cd venvapp/Scripts
-
-activate
+The system employs a **microservice-based architecture** designed for scalability, maintainability, and performance:
 
 ```
+┌─────────────────────────────────────────────────────────────┐
+│                    AI Resume Analyzer                       │
+│                                                             │
+│  ┌──────────────┐         ┌──────────────┐                 │
+│  │   Frontend   │  HTTP   │   Backend    │                 │
+│  │   React UI   │◄───────►│   Node.js    │                 │
+│  │  Port 5173   │         │  Port 5000   │                 │
+│  └──────────────┘         └──────┬───────┘                 │
+│                                  │                          │
+│                                  │ REST API                 │
+│                                  ▼                          │
+│                          ┌──────────────┐                   │
+│                          │   AI Engine  │                   │
+│                          │   Python     │                   │
+│                          │  Port 5001   │                   │
+│                          └──────────────┘                   │
+│                                  │                          │
+│                          ┌──────────────┐                   │
+│                          │   Database   │                   │
+│                          │   MongoDB    │                   │
+│                          └──────────────┘                   │
+└─────────────────────────────────────────────────────────────┘
+```
 
-Downloading packages from ```requirements.txt``` inside ``App`` folder
+### Technology Stack
+
+| Layer         | Technology                   | Purpose                                           |
+| ------------- | ---------------------------- | ------------------------------------------------- |
+| **Frontend**  | React 18, Tailwind CSS       | Modern, responsive user interface                 |
+| **Backend**   | Node.js, Express             | RESTful API, business logic, JD matching          |
+| **AI Engine** | Python, Flask, NLP libraries | Resume parsing, skill extraction, predictions     |
+| **Database**  | MongoDB                      | Persistent storage for analyses and user data     |
+| **NLP**       | pyresparser, NLTK, spaCy     | Natural language processing and entity extraction |
+
+---
+
+## Features
+
+### For Candidates
+
+- **Resume Analysis**: Upload your resume and receive instant, comprehensive feedback
+- **Skill Gap Identification**: Understand which skills you need to develop for your target role
+- **Resume Scoring**: Get an objective quality score with specific improvement recommendations
+- **Career Guidance**: Receive personalized course and certification recommendations
+- **Enhancement Suggestions**: Improve your resume with AI-powered writing tips
+
+### For Recruiters
+
+- **Batch Processing**: Analyze multiple resumes efficiently
+- **Job Matching**: Automatically match candidates to job descriptions
+- **Candidate Ranking**: Sort applicants by compatibility score
+- **Analytics Dashboard**: Visualize candidate data and trends
+- **Export Capabilities**: Download analysis results in various formats
+
+### Technical Features
+
+- **Dual Analysis Modes**: Choose between fast basic analysis or comprehensive AI-powered analysis
+- **Fallback Mechanism**: Ensures system reliability even if AI service is unavailable
+- **Scalable Architecture**: Microservices can be scaled independently
+- **RESTful API**: Well-documented endpoints for easy integration
+- **Error Handling**: Robust error management with graceful degradation
+
+---
+
+## Project Structure
+
+```
+AI-Resume-Analyzer/
+├── Resume-JD-Matcher/
+│   ├── client/                     # React Frontend Application
+│   │   ├── src/
+│   │   ├── public/
+│   │   └── package.json
+│   ├── server/                     # Node.js Backend Service
+│   │   ├── models/
+│   │   ├── utils/
+│   │   ├── index.js
+│   │   └── package.json
+│   ├── python-service/             # Python AI Microservice
+│   │   ├── app.py
+│   │   ├── requirements.txt
+│   │   └── README.md
+│   ├── docs/                       # Documentation
+│   │   ├── INTEGRATION_GUIDE.md
+│   │   ├── QUICKSTART.md
+│   │   └── API_REFERENCE.md
+│   └── start-all.bat               # Automated startup script
+├── LICENSE
+└── README.md
+```
+
+---
+
+## Quick Start
+
+### Prerequisites
+
+Ensure the following are installed on your system:
+
+- **Node.js** (v16.0.0 or higher) - [Download](https://nodejs.org/)
+- **Python** (v3.9.0 or higher) - [Download](https://www.python.org/downloads/)
+- **MongoDB** (v4.4 or higher) - [Download](https://www.mongodb.com/try/download/community)
+- **Git** - [Download](https://git-scm.com/downloads)
+
+### Installation
+
+#### Option 1: Automated Setup (Windows)
+
 ```bash
-cd../..
+cd Resume-JD-Matcher
+start-all.bat
+```
 
-cd App
+This script automatically starts all three services (Frontend, Backend, AI Engine).
 
+#### Option 2: Manual Setup
+
+**1. Clone the Repository**
+
+```bash
+git clone https://github.com/yourusername/AI-Resume-Analyzer.git
+cd AI-Resume-Analyzer/Resume-JD-Matcher
+```
+
+**2. Setup Python AI Service**
+
+```bash
+cd python-service
 pip install -r requirements.txt
-
 python -m spacy download en_core_web_sm
-
+python app.py
 ```
 
-After installation is finished create a Database ```cv```
+**3. Setup Node.js Backend** (New Terminal)
 
-And change user credentials inside ```App.py```
-https://github.com/deepakpadhi986/AI-Resume-Analyzer/blob/17e1cdb207fef62557dc394f4158bda515e541fd/App/App.py#L95
-
-Go to ```venvapp\Lib\site-packages\pyresparser``` folder
-
-And replace the ```resume_parser.py``` with ```resume_parser.py``` 
-
-which was provided by me inside ```pyresparser``` folder
-
-``Congratulations 🥳😱 your set-up 👆 and installation is finished 😵🤯``
-
-I hope that your ``venvapp`` is activated and working directory is inside ``App``
-
-Run the ```App.py``` file using
 ```bash
-streamlit run App.py
-
+cd server
+npm install
+npm start
 ```
 
-## Known Error 🤪
-If ``GeocoderUnavailable`` error comes up then just check your internet connection and network speed
+**4. Setup React Frontend** (New Terminal)
 
-## Issue While Installation and Set-up 🤧
-Check-out installation [Video](https://youtu.be/WFruijLC1Nc)
+```bash
+cd client
+npm install
+npm run dev
+```
 
-Feel Free to <a href="mailto:dnoobnerd@gmail.com?subject=I%20have%20an%20issue%20while%20setup%2Finstalling%20of%20AI%20RESUME%20ANALYZER&body=Name%3A%20-%0D%0A%0D%0ADesignation%3A%20-%0D%0A%0D%0APlease%20describe%20your%20problem%20in%20brief%20with%20attached%20photos%20of%20error">Send mail</a>
+**5. Access the Application**
 
-## Usage
-- After the setup it will do stuff's automatically
-- You just need to upload a resume and see it's magic
-- Try first with my resume uploaded in ``Uploaded_Resumes`` folder
-- Admin userid is ``admin`` and password is ``admin@resume-analyzer``
+Open your browser and navigate to: `http://localhost:5173`
 
-<!-- Roadmap -->
-## Roadmap 🛵
-* [x] Predict user experience level.
-* [x] Add resume scoring criteria for skills and projects.
-* [x] Added fields and recommendations for web, android, ios, data science.
-* [ ] Add more fields for other roles, and its recommendations respectively. 
-* [x] Fetch more details from users resume.
-* [ ] View individual user details.
+---
 
-## Contributing 🤘
-Pull requests are welcome. 
+## Documentation
 
-For major changes, please open an issue first to discuss what you would like to change.
+Comprehensive documentation is available in the following guides:
 
-I've attached the <a href="https://github.com/deepakpadhi986/AI-Resume-Analyzer/blob/main/RESUME%20ANALYSER%20SYNOPSIS.pdf">synopsis</a> of the project
+| Document                                                           | Description                                  |
+| ------------------------------------------------------------------ | -------------------------------------------- |
+| [Quick Start Guide](./Resume-JD-Matcher/QUICKSTART.md)             | Step-by-step setup instructions              |
+| [Integration Guide](./Resume-JD-Matcher/INTEGRATION_GUIDE.md)      | Technical architecture and API documentation |
+| [Integration Summary](./Resume-JD-Matcher/INTEGRATION_SUMMARY.md)  | Overview of system integration               |
+| [File Locking Fix](./Resume-JD-Matcher/server/FILE_LOCKING_FIX.md) | Windows file handling documentation          |
 
-If you want the full report of project
-<a href="mailto:dnoobnerd@gmail.com?subject=I%20Want%20The%20Project%20Report%20of%20AI-RESUME-ANALYZER%20(2022%20-%2023)&body=Here%20Are%20My%20Details%20%F0%9F%98%89%0D%0A%0D%0AOrganization%2FCollege%20Name%3A%20%0D%0A%0D%0AFull%20Name%3A%20%0D%0A%0D%0AGitHub%20Profile%20%3A%20%0D%0A%0D%0AFrom%20where%20did%20you%20get%20to%20know%20about%20this%20project%3A%0D%0A%0D%0APurpose%20of%20asking%20project%20report%20(describe)%3A%0D%0A%0D%0A%0D%0AIf%20the%20above%20information%20satisfy%20your%20identity%20you%20will%20get%20the%20report%20to%20your%20email.">Email Me</a> ``it's FREE``
+---
 
-## Acknowledgement 🤗
-- <a href="https://www.linkedin.com/in/mrbriit/">Dr Bright</a> - <a href="https://www.udemy.com/course/the-full-stack-data-scientist-bootcamp/">(The Full Stack Data Scientist BootCamp)</a>
-- <a href="https://www.academia.edu/32543544/Resume_Parser_with_Natural_Language_Processing">Resume Parser with Natural Language Processing</a>
-- <a href="https://github.com/OmkarPathak/pyresparser">pyresparser</a>
+## API Endpoints
 
-## Preview 👽
+### Backend Service (Port 5000)
 
-### Client Side
+- `POST /api/analyze` - Basic resume analysis
+- `POST /api/ai-analyze` - AI-powered comprehensive analysis
+- `GET /api/history` - Retrieve analysis history
 
-**Main Screen**
+### Python AI Service (Port 5001)
 
-![Screenshot](https://github.com/deepakpadhi986/AI-Resume-Analyzer/blob/main/screenshots/user/1-main-screen.png?raw=true)
+- `GET /health` - Service health check
+- `POST /api/analyze-resume` - NLP-based resume parsing
+- `POST /api/extract-text` - PDF text extraction
 
-**Resume Analysis**
+For detailed API documentation, see [Integration Guide](./Resume-JD-Matcher/INTEGRATION_GUIDE.md).
 
-![Screenshot](https://github.com/deepakpadhi986/AI-Resume-Analyzer/blob/main/screenshots/user/2-analysis.jpg?raw=true)
+---
 
-**Skill Recommendation**
+## Configuration
 
-![Screenshot](https://github.com/deepakpadhi986/AI-Resume-Analyzer/blob/main/screenshots/user/3-recom.png?raw=true)
+### Environment Variables
 
-**Course Recommendation**
+Create a `.env` file in the `server` directory:
 
-![Screenshot](https://github.com/deepakpadhi986/AI-Resume-Analyzer/blob/main/screenshots/user/4-recom.png?raw=true)
+```env
+PORT=5000
+MONGODB_URI=mongodb://localhost:27017/resume-matcher
+PYTHON_SERVICE_URL=http://localhost:5001
+NODE_ENV=development
+```
 
-**Tips and Overall Score**
+### Database Setup
 
-![Screenshot](https://github.com/deepakpadhi986/AI-Resume-Analyzer/blob/main/screenshots/user/5-tipsscore.png?raw=true)
+Ensure MongoDB is running:
 
-**Video Recommendation**
+```bash
+# Windows
+net start MongoDB
 
-![Screenshot](https://github.com/deepakpadhi986/AI-Resume-Analyzer/blob/main/screenshots/user/6-recom.png?raw=true)
+# macOS/Linux
+sudo systemctl start mongod
+```
 
-### Feedback
+---
 
-**Feedback Form**
+## Testing
 
-![Screenshot](https://github.com/deepakpadhi986/AI-Resume-Analyzer/blob/main/screenshots/feedback/1-form.png?raw=true)
+Run the test suite:
 
-**Overall Rating Analysis and Comment History**
+```bash
+# Backend tests
+cd server
+npm test
 
-![Screenshot](https://github.com/deepakpadhi986/AI-Resume-Analyzer/blob/main/screenshots/feedback/2-analytics.png?raw=true)
+# Frontend tests
+cd client
+npm test
 
-### Admin
+# Python service tests
+cd python-service
+pytest
+```
 
-**Login**
+---
 
-![Screenshot](https://github.com/deepakpadhi986/AI-Resume-Analyzer/blob/main/screenshots/admin/1-main-screen.png?raw=true)
+## Deployment
 
-**User Count and it's data**
+### Production Build
 
-![Screenshot](https://github.com/deepakpadhi986/AI-Resume-Analyzer/blob/main/screenshots/admin/2-user-data.png?raw=true)
+```bash
+# Build frontend
+cd client
+npm run build
 
-**Exported csv file**
+# Start backend in production mode
+cd server
+NODE_ENV=production npm start
+```
 
-![Screenshot](https://github.com/deepakpadhi986/AI-Resume-Analyzer/blob/main/screenshots/admin/3-user-datacsv.png?raw=true)
+### Docker Deployment
 
-**Feedback Data**
+```bash
+docker-compose up -d
+```
 
-![Screenshot](https://github.com/deepakpadhi986/AI-Resume-Analyzer/blob/main/screenshots/admin/4-feed-data.png?raw=true)
+---
 
-**Pie Chart Analytical Representation of clusters**
+## Contributing
 
-![Screenshot](https://github.com/deepakpadhi986/AI-Resume-Analyzer/blob/main/screenshots/admin/5-pieexp.png?raw=true)
+We welcome contributions! Please follow these guidelines:
 
-![Screenshot](https://github.com/deepakpadhi986/AI-Resume-Analyzer/blob/main/screenshots/admin/6-piescre.jpg?raw=true)
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-![Screenshot](https://github.com/deepakpadhi986/AI-Resume-Analyzer/blob/main/screenshots/admin/7-pielocation.png?raw=true)
+---
 
-### Built with 🤍 AI RESUME ANALYZER by <a href="https://dnoobnerd.netlify.app/">Deepak Padhi</a>
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+## Acknowledgments
+
+- **pyresparser** - Resume parsing library
+- **NLTK** - Natural Language Toolkit
+- **spaCy** - Industrial-strength NLP
+- **React** - Frontend framework
+- **Node.js** - Backend runtime
+- **MongoDB** - Database solution
+
+---
+
+## Support
+
+For issues, questions, or contributions:
+
+- **Issues**: [GitHub Issues](https://github.com/yourusername/AI-Resume-Analyzer/issues)
+- **Documentation**: See the `docs/` directory
+- **Email**: support@example.com
+
+---
+
+<div align="center">
+
+**Built with precision and care for the recruitment industry**
+
+Made with ❤️ using React, Node.js, Python, and AI/NLP
+
+© 2026 AI Resume Analyzer. All rights reserved.
+
+</div>

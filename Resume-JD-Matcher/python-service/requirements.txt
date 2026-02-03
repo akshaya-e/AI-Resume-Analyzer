@@ -1,0 +1,8 @@
+flask
+flask-cors
+pyresparser
+pdfminer3
+nltk
+werkzeug
+spacy>=3.7.2
+pydantic>=2.0
