@@ -1,8 +1,41 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate, Link } from 'react-router-dom';
-import { Upload, FileText, CheckCircle, Loader2, Sparkles, Shield, BarChart3, ArrowRight, PenTool } from 'lucide-react';
+import { Upload, FileText, CheckCircle, Loader2, Sparkles, Shield, BarChart3, ArrowRight, PenTool, TrendingUp } from 'lucide-react';
 import clsx from 'clsx';
+
+const Home = () => {
+  const navigate = useNavigate();
+  const [file, setFile] = useState(null);
+  const [jd, setJd] = useState('');
+  const [loading, setLoading] = useState(false);
+  const [dragging, setDragging] = useState(false);
+
+  // Test if the component renders
+  console.log('Home component is rendering...');
+
+  return (
+    <div className="min-h-screen bg-slate-50">
+      <div className="max-w-4xl mx-auto p-8">
+        <h1 className="text-4xl font-bold text-center text-slate-900 mb-8">
+          AI Resume Analyzer
+        </h1>
+        <div className="bg-white rounded-lg shadow-lg p-8">
+          <p className="text-lg text-slate-600 text-center">
+            Welcome to the AI Resume Analyzer! The application is working.
+          </p>
+          <div className="mt-8 text-center">
+            <button className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">
+              Test Button
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Home;
 
 const Home = () => {
   const navigate = useNavigate();
@@ -219,6 +252,173 @@ ACHIEVEMENTS & RECOGNITION
 VOLUNTEER WORK
 • UX Mentor at ADPList - Mentored 20+ aspiring designers
 • Design volunteer for non-profit organizations - Pro bono work for 5 NGOs`
+      },
+      'devops-engineer': {
+        filename: 'Senior_DevOps_Engineer_Resume.txt',
+        content: `MARCUS JOHNSON
+Senior DevOps Engineer & Cloud Architect
+📧 marcus.johnson@email.com | 📱 +1 (555) 678-9012
+🔗 linkedin.com/in/marcusjohnson | ☁️ marcuscloud.dev | 🐙 github.com/marcusj
+
+═══════════════════════════════════════════════════════════════════════════════
+
+PROFESSIONAL SUMMARY
+═══════════════════════════════════════════════════════════════════════════════
+Innovative Senior DevOps Engineer with 8+ years of experience designing and implementing scalable 
+cloud infrastructure and CI/CD pipelines. Expert in containerization, orchestration, and 
+infrastructure as code. Led DevOps transformations that reduced deployment time by 90% and 
+improved system reliability to 99.99% uptime.
+
+TECHNICAL EXPERTISE
+Cloud Platforms: AWS, Google Cloud, Azure • Containerization: Docker, Kubernetes, OpenShift
+CI/CD Tools: Jenkins, GitLab CI, GitHub Actions • Infrastructure: Terraform, Ansible
+Monitoring: Prometheus, Grafana, ELK Stack • Scripting: Bash, Python, Go
+
+PROFESSIONAL EXPERIENCE
+
+PRINCIPAL DEVOPS ENGINEER | Netflix | Los Gatos, CA | Feb 2021 - Present
+• Lead DevOps strategy for streaming platform serving 230M+ global subscribers
+• Architected multi-region Kubernetes infrastructure handling 1B+ requests daily
+• Implemented chaos engineering practices improving system resilience by 40%
+• Reduced deployment time from 4 hours to 15 minutes through advanced CI/CD pipelines
+• Led team of 12 DevOps engineers across multiple product teams
+• Achieved 99.99% uptime for critical streaming services
+
+SENIOR DEVOPS ENGINEER | Uber | San Francisco, CA | Jan 2019 - Jan 2021
+• Managed infrastructure for ride-sharing platform serving 100M+ users globally
+• Implemented GitOps workflows reducing configuration drift by 95%
+• Built auto-scaling Kubernetes clusters handling 500K+ concurrent requests
+• Designed disaster recovery procedures with RTO < 15 minutes
+• Reduced infrastructure costs by 35% through resource optimization
+
+KEY ACHIEVEMENTS
+🏆 Netflix Engineering Excellence Award (2023)
+🥇 Uber Innovation Award - Infrastructure Category (2020)
+📊 Top 1% DevOps Engineer - Stack Overflow Developer Survey (2022)
+🌟 CNCF Ambassador (2023)
+
+EDUCATION & CERTIFICATIONS
+Bachelor of Science in Computer Engineering | Stanford University | 2015
+• AWS Certified Solutions Architect - Professional (2023)
+• Certified Kubernetes Administrator (CKA) (2023)
+• Google Cloud Professional DevOps Engineer (2022)`
+      },
+      'frontend-developer': {
+        filename: 'Senior_Frontend_Developer_Resume.txt',
+        content: `EMILY CHEN
+Senior Frontend Developer & UI Engineer
+📧 emily.chen@email.com | 📱 +1 (555) 789-0123
+🌐 emilychen.dev | 🔗 linkedin.com/in/emilychen | 🎨 dribbble.com/emilychen
+
+═══════════════════════════════════════════════════════════════════════════════
+
+PROFESSIONAL SUMMARY
+═══════════════════════════════════════════════════════════════════════════════
+Passionate Senior Frontend Developer with 6+ years of experience creating exceptional user 
+experiences for web and mobile applications. Expert in modern JavaScript frameworks, responsive 
+design, and performance optimization. Led frontend initiatives that improved user engagement by 
+50% and page load speeds by 70%.
+
+TECHNICAL EXPERTISE
+Languages: JavaScript (ES6+), TypeScript, HTML5, CSS3, SASS/SCSS
+Frameworks: React.js, Next.js, Vue.js, Angular, Svelte
+State Management: Redux, Zustand, Vuex, Context API
+Styling: Tailwind CSS, Styled Components, CSS Modules, Material-UI
+Build Tools: Webpack, Vite, Parcel, Rollup • Testing: Jest, Cypress, Playwright
+
+PROFESSIONAL EXPERIENCE
+
+SENIOR FRONTEND DEVELOPER | Airbnb | San Francisco, CA | Jan 2021 - Present
+• Lead frontend development for host dashboard serving 4M+ hosts globally
+• Implemented micro-frontend architecture improving development velocity by 40%
+• Optimized application performance achieving 95+ Lighthouse scores across all pages
+• Built accessible components following WCAG 2.1 AA guidelines
+• Mentored team of 6 junior developers and conducted code reviews
+• Reduced bundle size by 60% through code splitting and lazy loading
+
+FRONTEND DEVELOPER | Stripe | San Francisco, CA | Mar 2019 - Dec 2020
+• Developed payment dashboard and checkout experiences for millions of merchants
+• Built reusable React component library with 50+ components
+• Implemented real-time data visualization using D3.js and Chart.js
+• Achieved 99.9% uptime for critical payment flows
+• Reduced customer support tickets by 30% through improved UX design
+• Led A/B testing initiatives resulting in 25% increase in conversion rates
+
+KEY PROJECTS
+🏠 Host Dashboard Redesign - 40% improvement in user task completion rates
+💳 Payment Checkout Optimization - 35% reduction in cart abandonment
+🛍️ Mobile PWA Development - 40% reduction in mobile bounce rate
+⚡ Performance Optimization - 70% reduction in initial bundle size
+
+AWARDS & RECOGNITION
+🏆 Airbnb Engineering Excellence Award (2023)
+🥇 Stripe Innovation Award - Frontend Category (2020)
+📱 Google Developer Expert - Web Technologies (2022)
+🎨 Dribbble Featured Designer - 25K+ followers
+
+EDUCATION & CERTIFICATIONS
+Bachelor of Science in Computer Science | UC Berkeley | 2015
+• Google Mobile Web Specialist (2023) • AWS Certified Cloud Practitioner (2022)
+• React Developer Certification - Meta (2020)`
+      },
+      'backend-developer': {
+        filename: 'Senior_Backend_Developer_Resume.txt',
+        content: `ALEX RODRIGUEZ
+Senior Backend Developer & System Architect
+📧 alex.rodriguez@email.com | 📱 +1 (555) 890-1234
+🔗 linkedin.com/in/alexrodriguez | 💻 alexdev.io | 🐙 github.com/alexr
+
+═══════════════════════════════════════════════════════════════════════════════
+
+PROFESSIONAL SUMMARY
+═══════════════════════════════════════════════════════════════════════════════
+Experienced Senior Backend Developer with 7+ years of expertise in designing and implementing 
+scalable server-side applications and distributed systems. Expert in microservices architecture, 
+database optimization, and API design. Led backend initiatives that improved system performance 
+by 80% and reduced infrastructure costs by 40%.
+
+TECHNICAL EXPERTISE
+Languages: Python, Java, Go, Node.js, C#, Rust
+Frameworks: Django, FastAPI, Spring Boot, Express.js, .NET Core
+Databases: PostgreSQL, MongoDB, Redis, MySQL, Cassandra, Elasticsearch
+Cloud Platforms: AWS, Google Cloud, Azure • Message Queues: Apache Kafka, RabbitMQ
+API Technologies: REST, GraphQL, gRPC, WebSocket • DevOps: Docker, Kubernetes, Jenkins
+
+PROFESSIONAL EXPERIENCE
+
+PRINCIPAL BACKEND ENGINEER | Discord | San Francisco, CA | Jan 2021 - Present
+• Architect backend systems for real-time communication platform serving 150M+ users
+• Design and implement microservices handling 1B+ messages daily
+• Lead team of 10 backend engineers across multiple product areas
+• Optimized database queries reducing response time by 75%
+• Implemented event-driven architecture using Apache Kafka
+• Achieved 99.99% uptime for critical messaging services
+
+SENIOR BACKEND DEVELOPER | Twitch | San Francisco, CA | Mar 2019 - Dec 2020
+• Developed streaming infrastructure supporting 30M+ daily active users
+• Built real-time chat system handling 2M+ concurrent connections
+• Implemented content delivery optimization reducing latency by 50%
+• Designed auto-scaling systems handling traffic spikes during major events
+• Led migration from monolithic to microservices architecture
+• Reduced infrastructure costs by 35% through optimization initiatives
+
+KEY PROJECTS
+💬 Real-time Messaging Platform - 1B+ messages daily with <100ms latency
+🎮 Live Streaming Infrastructure - 3M+ concurrent users during major events
+📱 Content Recommendation Engine - 35% increase in user engagement
+☁️ Distributed File Storage - 99.999% data durability across petabytes
+
+AWARDS & RECOGNITION
+🏆 Discord Engineering Excellence Award (2023)
+🥇 Twitch Innovation Award - Infrastructure Category (2020)
+📊 Top 1% Backend Developer - Stack Overflow (2022)
+🌟 GitHub Arctic Code Vault Contributor (2020)
+
+EDUCATION & CERTIFICATIONS
+Master of Science in Computer Science | Stanford University | 2017
+• AWS Certified Solutions Architect - Professional (2023)
+• Google Cloud Professional Cloud Architect (2022)
+• MongoDB Certified Developer Associate (2021)`
       }
     };
 
@@ -722,7 +922,7 @@ The more detailed the job description, the better our AI can analyze the match!"
               <p className="text-slate-600">Professional templates designed to pass ATS systems and impress recruiters</p>
             </div>
             
-            <div className="grid md:grid-cols-3 gap-6">
+            <div className="grid md:grid-cols-4 gap-6">
               <div className="text-center">
                 <div className="w-16 h-16 bg-white rounded-2xl shadow-sm flex items-center justify-center mx-auto mb-4">
                   <CheckCircle className="text-emerald-600" size={32} />
@@ -743,8 +943,38 @@ The more detailed the job description, the better our AI can analyze the match!"
                 <div className="w-16 h-16 bg-white rounded-2xl shadow-sm flex items-center justify-center mx-auto mb-4">
                   <FileText className="text-violet-600" size={32} />
                 </div>
-                <h4 className="font-bold text-slate-900 mb-2">Easy to Customize</h4>
-                <p className="text-sm text-slate-600">Simple to edit and personalize for your needs</p>
+                <h4 className="font-bold text-slate-900 mb-2">Industry-Specific</h4>
+                <p className="text-sm text-slate-600">Tailored for different career fields and roles</p>
+              </div>
+
+              <div className="text-center">
+                <div className="w-16 h-16 bg-white rounded-2xl shadow-sm flex items-center justify-center mx-auto mb-4">
+                  <TrendingUp className="text-orange-600" size={32} />
+                </div>
+                <h4 className="font-bold text-slate-900 mb-2">Proven Results</h4>
+                <p className="text-sm text-slate-600">Based on successful resumes from top companies</p>
+              </div>
+            </div>
+
+            {/* Template Stats */}
+            <div className="mt-8 pt-8 border-t border-slate-200">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div>
+                  <div className="text-3xl font-black text-blue-600 mb-1">9+</div>
+                  <div className="text-sm text-slate-600 font-medium">Professional Templates</div>
+                </div>
+                <div>
+                  <div className="text-3xl font-black text-emerald-600 mb-1">95%</div>
+                  <div className="text-sm text-slate-600 font-medium">ATS Pass Rate</div>
+                </div>
+                <div>
+                  <div className="text-3xl font-black text-violet-600 mb-1">50K+</div>
+                  <div className="text-sm text-slate-600 font-medium">Downloads</div>
+                </div>
+                <div>
+                  <div className="text-3xl font-black text-orange-600 mb-1">4.9★</div>
+                  <div className="text-sm text-slate-600 font-medium">User Rating</div>
+                </div>
               </div>
             </div>
           </div>
