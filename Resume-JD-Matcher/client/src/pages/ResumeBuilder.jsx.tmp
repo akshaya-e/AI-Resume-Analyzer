@@ -1,10 +1,8 @@
-import React, { useState } from 'react';
-import axios from 'axios';
-import { useNavigate, Link } from 'react-router-dom';
-import { Upload, FileText, CheckCircle, Loader2, Sparkles, Shield, BarChart3, ArrowRight, PenTool, TrendingUp } from 'lucide-react';
-import clsx from 'clsx';
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { ArrowLeft, Download, Plus, Trash2, User, Briefcase, Code } from 'lucide-react';
 
-const Home = () => {
+const ResumeBuilder = () => {
   const navigate = useNavigate();
   const [file, setFile] = useState(null);
   const [jd, setJd] = useState('');
@@ -732,34 +730,17 @@ The more detailed the job description, the better our AI can analyze the match!"
         
         {/* Resume Templates Section */}
         <div className="space-y-8">
-          <div className="text-center space-y-6">
-            <div className="inline-flex items-center gap-2 px-5 py-2 bg-gradient-to-r from-violet-50 via-purple-50 to-pink-50 border border-violet-200 rounded-full shadow-sm">
-              <PenTool size={18} className="text-violet-600" />
-              <span className="text-sm font-bold text-gradient bg-gradient-to-r from-violet-700 to-purple-700 bg-clip-text text-transparent tracking-wide uppercase">Premium Templates</span>
+          <div className="text-center space-y-4">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-violet-50 border border-violet-100 rounded-full">
+              <PenTool size={16} className="text-violet-600" />
+              <span className="text-xs font-semibold text-violet-700 tracking-wide uppercase">Resume Templates</span>
             </div>
-            <h2 className="text-4xl md:text-5xl font-black text-slate-900 leading-tight">
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900">
               Professional Resume Templates
             </h2>
-            <p className="text-slate-600 text-xl max-w-3xl mx-auto leading-relaxed">
-              Choose from our expertly crafted, <span className="font-semibold text-gradient bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">ATS-optimized</span> resume templates designed by industry professionals for maximum impact
+            <p className="text-slate-500 text-lg max-w-2xl mx-auto">
+              Choose from our curated collection of ATS-friendly resume templates designed for different career fields
             </p>
-            
-            <div className="flex items-center justify-center gap-8 pt-4">
-              <div className="flex items-center gap-2">
-                <div className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></div>
-                <span className="text-sm font-semibold text-slate-700">9+ Templates</span>
-              </div>
-              <div className="w-px h-6 bg-slate-200"></div>
-              <div className="flex items-center gap-2">
-                <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></div>
-                <span className="text-sm font-semibold text-slate-700">95% ATS Pass Rate</span>
-              </div>
-              <div className="w-px h-6 bg-slate-200"></div>
-              <div className="flex items-center gap-2">
-                <div className="w-2 h-2 bg-violet-500 rounded-full animate-pulse"></div>
-                <span className="text-sm font-semibold text-slate-700">50K+ Downloads</span>
-              </div>
-            </div>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
