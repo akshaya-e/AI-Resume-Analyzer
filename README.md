@@ -14,6 +14,9 @@
     <a href="https://github.com/deepakpadhi986/AI-Resume-Analyzer/blob/main/LICENSE">
       <img src="https://img.shields.io/github/license/deepakpadhi986/AI-Resume-Analyzer.svg?color=yellow" alt="license" />
     </a>
+    <a href="https://gitcgr.com/deepakpadhi986/AI-Resume-Analyzer" target="_blank" rel="noopener noreferrer">
+      <img src="https://gitcgr.com/badge/deepakpadhi986/AI-Resume-Analyzer.svg" alt="gitcgr" />
+    </a>
   </p>
   
   <!--links-->
